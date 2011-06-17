@@ -21,6 +21,9 @@ compile '/stylesheets/images/*' do
 
 end
 
+compile '/CNAME' do
+end
+
 compile '/images/*' do
 
 end
@@ -50,6 +53,9 @@ end
 
 route '/javascript/*' do
   item.identifier.chop + '.' + item[:extension]
+end
+route '/CNAME' do
+  '/CNAME'
 end
 route '/stylesheets/partials/*/' do
   nil
