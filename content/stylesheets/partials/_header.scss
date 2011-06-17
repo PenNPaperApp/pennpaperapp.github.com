@@ -1,0 +1,19 @@
+#header{
+  #menu{
+    padding:$default-padding $default-padding 0px $default-padding;
+    text-align:right;
+    
+    a {
+      @include unstyled-link;
+      cursor:pointer;
+      color: $primary-color;
+      &:hover{ color: $soft-primary-color; }
+      &:active{ color: $primary-color; }
+    }
+
+    li{
+      display: inline;
+      list-style: none;
+    }
+  }
+}

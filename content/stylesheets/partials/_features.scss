@@ -1,0 +1,18 @@
+.features {
+  background-color:$primary-color;
+  
+  padding:$default-padding;
+}
+
+.list{
+  li{
+    list-style-image: url("/stylesheets/images/Thumbtack.png");
+  }
+}
+
+.shadow{
+  @include box-shadow;
+}
+
+
+

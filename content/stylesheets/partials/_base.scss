@@ -1,0 +1,26 @@
+// This file must be imported before loading html5-boilerplate
+
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+// Feel free to delete these if you want keep the defaults:
+$default-padding :5px;
+//$font-color: #222;
+
+$white-color: #FFF;
+$primary-color: #4498CF;
+$secondary-color: #444;
+$highlight-color: #FF0000;
+$matte-color:#EEE;
+$subtle-neutral-color: #CCC;
+$soft-primary-color: lighten($primary-color, 10);
+$narrow-font: "Arial Narrow";
+
+$blueprint-grid-columns: 24;
+$blueprint-container-size: 950px;
+$blueprint-grid-margin: 0px;
+
+$default-text-shadow-h-offset:1px;
+$default-text-shadow-v-offset:1px;
+$default-text-shadow-blur:1px;
+// Use this to calculate the width based on the total width.
+// Or you can set !blueprint_grid_width to a fixed value and unset !blueprint_container_size -- it will be calculated for you.
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;

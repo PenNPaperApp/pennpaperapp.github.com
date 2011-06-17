@@ -1,0 +1,31 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Pen N Paper
+    %link{:href => "/stylesheets/style.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %meta{:content => "nanoc 3.2.0a3", :name => "generator"}/
+  %body.one-col.bp
+    #container
+      #header
+        #menu
+          %li.content
+            %a{:href => "/"} 
+              Pen N Paper
+          %li.content
+            %a{:href => "/support"} 
+              Support
+          %li.content
+            %a{:href => "http://www.mad-swan.com"} 
+              MadSwan
+      #content
+        =yield
+
+        
+      
+      #footer.center
+        %br
+        %script{:src => "http://connect.facebook.net/en_US/all.js#xfbml=1"}
+        %fb:like-box{:header => "true", :href => "http://www.facebook.com/pages/Pen-N-Paper/124881430927546", :show_faces => "false", :stream => "false", :width => "300"}
+        Developed By MadSwan, LLC 2009-2011 
+        %a{:href => "mailto:support@mad-swan.com"}support@mad-swan.com

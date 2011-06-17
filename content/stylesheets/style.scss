@@ -1,0 +1,89 @@
+@import "partials/base";
+@import "html5-boilerplate";
+
+// Now you can choose to include the whole
+// enchilada by uncommeting this line
+//@include html5-boilerplate;
+
+// Or, you can pick and choose only the
+// sections you want to include
+@include html5-boilerplate-reset;
+//@include html5-boilerplate-fonts;
+//@include html5-boilerplate-styles;
+@include html5-boilerplate-helpers;
+@include html5-boilerplate-media;
+
+
+@import "compass";
+@import "blueprint";
+
+@import "blueprint/fancy-type";
+@import "fancy-buttons";
+
+$content-columns: $blueprint-grid-columns;
+
+
+@import "partials/one_col";
+@import "partials/header";
+@import "partials/features";
+@import "partials/faq";
+@import "partials/three_col";
+
+body.bp {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+  @include display-box;
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight:bold;
+    padding: 0px $default-padding;
+    color:$secondary-color
+  }  
+
+  h1 {
+    font-size:60px;
+  }
+
+  hr {
+    @include colruler;
+  }
+
+  .button { 
+    @include fancy-button($highlight-color); 
+    } 
+    
+  a {
+    @include unstyled-link;
+  }
+  
+  .center{
+    text-align:center;
+  }
+  
+  
+  #error_explanation {
+    @include error;
+  }
+  
+
+    
+  .matte {
+    background-color:$matte-color;
+    @include border-radius;
+    
+  }
+  .content {
+    padding:$default-padding;
+  }
+  
+  .secondary {
+    color:$secondary-color;
+  }
+  
+  #highlightText
+  {
+    color:$primary-color;
+  }
+}

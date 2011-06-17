@@ -1,0 +1,15 @@
+#col{
+  @include column(6);
+}
+
+#last_col{
+  @include column(6, true);
+}
+
+.push_column{
+  @include push(1);
+}
+
+.push_first_column{
+  @include push(2);
+}
